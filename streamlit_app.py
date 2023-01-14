@@ -11,7 +11,7 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 # Crea una función para analizar el texto con GPT-3
 def analyze_text(text):
     response = openai.Completion.create(
-        engine="text-davinci-002",
+        engine="text-davinci-003",
         prompt=f"Analizar el siguiente texto desde el punto de vista retórico y brindar consejos para mejorar: {text}",
         max_tokens=2048,
     )

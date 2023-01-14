@@ -1,6 +1,7 @@
 import openai
 import streamlit as st
 import os
+import re
 
 # Autenticación de OpenAI (oculta la clave en una variable de entorno)
 openai.api_key = os.environ.get("OPENAI_API_KEY")

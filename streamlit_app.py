@@ -1,3 +1,12 @@
+import openai
+import streamlit as st
+import os
+
+# Autenticación de OpenAI (oculta la clave en una variable de entorno)
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+
+
+
 # Crea una función para analizar el texto con GPT-3
 def analyze_text(text):
     response = openai.Completion.create(
